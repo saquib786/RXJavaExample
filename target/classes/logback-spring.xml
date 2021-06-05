@@ -1,0 +1,12 @@
+<configuration>
+    <appender name = "general" class="ch.qos.logback.core.FileAppender">
+        <File>../logs/general.log</File>
+        <encoder>
+            <pattern>[%d{yyyy-MM-dd'T'HH:mm:ss.sss'Z'}] [%C] [%t] [%L] [%-5p] %m%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="info">
+        <appender-ref ref="general"></appender-ref>
+    </root>
+</configuration>
